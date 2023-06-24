@@ -1,0 +1,43 @@
+:root {
+  /* Variant color ligt - normal */
+  /* Variables body y generales */
+  --background-color: #242424;
+  --text-color-generic: #ffffff;
+  --text-hover-generic: #e7e3e3b2;
+  --color-icon-menu: #e7e3e3e7;
+
+
+  /* styles text */
+  --color-text-paragraph: #c4c0c08a;
+  --fz-paragraph: 16px;
+  --font-w-300: 300;
+  --font-w-300-italic: 300;
+  --font-w-400-regular: 400;
+  --font-w-500-mediun: 500;
+  --font-w-700-bold: 700;
+
+  /* Size querys */
+  --media-small: 768px;
+  --media-mediun: 962px;
+  --media-big: 1024px;
+}
+
+:root {
+  --z-i-navBar: 20;
+}
+
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d9e7;
+  --greyDark: #9baacf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
