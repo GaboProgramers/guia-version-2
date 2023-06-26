@@ -1,12 +1,32 @@
+import { useState } from 'react';
 import './App.css';
 import HeaderComponents from './components/headers/HeaderComponents';
+import Home from './components/home/Home';
 
 function App() {
+    const [menuBar, setMenuBar] = useState(false);
+    const [open, setOpen] = useState(false);
+
     return (
         <div>
+            <div
+                className={`${open ? 'overlay' : ''}`}
+                onClick={() => {
+                    setOpen(false);
+                    setMenuBar(false);
+                }}
+            ></div>
             <header className="header">
-                <HeaderComponents />
+                <HeaderComponents
+                    menuBar={menuBar}
+                    setMenuBar={setMenuBar}
+                    open={open}
+                    setOpen={setOpen}
+                />
             </header>
+            <section className="home__container">
+                <Home />
+            </section>
         </div>
     );
 }

@@ -1,0 +1,114 @@
+.home__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.home__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__header .home__title,
+.home__header article .home__subtitle {
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+}
+
+.home__header .home__title {
+    background: -webkit-linear-gradient(var(--focus-link), #7a0ce2be);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home__header article .home__subtitle {
+    color: var(--color-icon-menu);
+    margin-bottom: 10px;
+}
+
+.home__header article .home__paragraph {
+    width: 79%;
+    color: var(--text-hover-generic);
+}
+
+.home__paragraph span {
+    font-size: 1.1rem;
+    background: -webkit-linear-gradient(var(--focus-link), #a051eb5d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: var(--font-w-700-bold);
+}
+
+.home__list-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--background-card);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.home-item .home-icon {
+    width: 45px;
+    aspect-ratio: 1 / 1;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+.home-item .home__title-item {
+    color: var(--text-color-generic);
+}
+
+.home__btn {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.home__btn .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: var(--font-w-500-mediun);
+}
+
+.home__btn .btn:first-child {
+    background-color: var(--focus-link);
+    color: var(--text-color-generic);
+    transition: background .3s ease, color .3s ease;
+}
+
+.home__btn .btn:first-child:hover {
+    background-color: #2b82b4;
+}
+
+.home__btn .btn:last-child {
+    background-color: #504e4e88;
+    color: var(--text-color-generic);
+    transition: background .3s ease;
+}
+
+.home__btn .btn:last-child:hover {
+    background-color: var(--color-text-paragraph);
+}

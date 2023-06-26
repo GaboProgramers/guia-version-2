@@ -5,10 +5,12 @@
   --text-color-generic: #ffffff;
   --text-hover-generic: #e7e3e3b2;
   --color-icon-menu: #e7e3e3e7;
+  --focus-link: #0ba6ff;
+  --background-card: #2f2f2f;
 
 
   /* styles text */
-  --color-text-paragraph: #c4c0c08a;
+  --color-text-paragraph: #c4c0c056;
   --fz-paragraph: 16px;
   --font-w-300: 300;
   --font-w-300-italic: 300;
@@ -24,16 +26,6 @@
 
 :root {
   --z-i-navBar: 20;
-}
-
-:root {
-  --primary-light: #8abdff;
-  --primary: #6d5dfc;
-  --primary-dark: #5b0eeb;
-  --white: #ffffff;
-  --greyLight-1: #e4ebf5;
-  --greyLight-2: #c8d9e7;
-  --greyDark: #9baacf;
 }
 
 * {

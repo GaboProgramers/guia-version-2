@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import './styles/headersComponents.css';
 import { CgMenuGridO } from 'react-icons/cg';
 import { MdOutlineClose } from 'react-icons/md';
 import { AiOutlineLink } from 'react-icons/ai';
 import { CiMenuKebab } from 'react-icons/ci';
+import { BsMoonStarsFill, BsSun } from 'react-icons/bs';
 import {
     BsGithub,
     BsYoutube,
@@ -13,10 +15,8 @@ import {
     BsFacebook,
 } from 'react-icons/bs';
 
-const HeaderComponents = () => {
-    const [menuBar, setMenuBar] = useState(false);
+const HeaderComponents = ({ menuBar, setMenuBar, open, setOpen }) => {
     const [darkMode, setDarkMode] = useState(false);
-    const [open, setOpen] = useState(false);
 
     const handleClose = () => {
         setMenuBar(!menuBar);
@@ -64,8 +64,12 @@ const HeaderComponents = () => {
                 </ul>
                 <span className="line"></span>
                 <div className="dark__mode">
-                    <span className="sun__logo">☀️</span>
-                    <span className="dark__logo">🌑</span>
+                    <span className="sun__logo">
+                        <BsSun />
+                    </span>
+                    <span className="dark__logo">
+                        <BsMoonStarsFill />
+                    </span>
                 </div>
                 <span className="line"></span>
                 <ul className="list__link-redes-destock">
@@ -166,14 +170,14 @@ const HeaderComponents = () => {
                                 darkMode ? 'active' : ''
                             }`}
                         >
-                            ☀️
+                            <BsSun />
                         </span>
                         <span
                             className={`moon__logo icon-dark ${
                                 darkMode ? '' : 'active'
                             }`}
                         >
-                            🌑
+                            <BsMoonStarsFill />
                         </span>
                     </div>
                 </div>
