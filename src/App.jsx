@@ -2,13 +2,15 @@ import { useState } from 'react';
 import './App.css';
 import HeaderComponents from './components/headers/HeaderComponents';
 import Home from './components/home/Home';
+import CoffeMe from './components/CoffeMe';
+import Footer from './components/footer/Footer';
 
 function App() {
     const [menuBar, setMenuBar] = useState(false);
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
+        <div className="App">
             <div
                 className={`${open ? 'overlay' : ''}`}
                 onClick={() => {
@@ -27,6 +29,8 @@ function App() {
             <section className="home__container">
                 <Home />
             </section>
+            <CoffeMe />
+            <Footer />
         </div>
     );
 }

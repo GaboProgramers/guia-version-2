@@ -45,11 +45,65 @@ button {
 .overlay {
   width: 100%;
   height: 100%;
-  background: #3838387a;
+  background: var(--background-color);
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   transition: all .3s ease;
+  z-index: var(--z-i-navBar);
+}
+
+.App {
+  position: relative;
+}
+
+/* Coffe-me */
+.coffe__me {
+  width: 60px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 70px;
+  right: 35px;
+  background: var(--focus-link);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform .3s ease;
+  border: 1px solid royalblue;
+}
+
+.coffe__me:hover {
+  transform: scale(1.1);
+}
+
+.coffe__logo-desktop {
+  display: none;
+}
+
+.coffe__logo-movile {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.modal {
+  width: max-content;
+  position: absolute;
+  bottom: 55px;
+  right: 55px;
+  padding: 10px;
+  background: var(--focus-link);
+  color: var(--background-color);
+  border-radius: 20px 20px 0 20px;
+  animation: 3s alternate modal;
+  transition: display .3s ease-in-out;
+  display: none;
+}
+
+.coffe__me:hover .modal {
+  display: block;
 }
