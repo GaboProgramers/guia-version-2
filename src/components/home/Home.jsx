@@ -4,6 +4,7 @@ import { ImHtmlFive } from 'react-icons/im';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
 import { GrNode } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -20,12 +21,10 @@ const Home = () => {
                     </p>
                 </article>
                 <div className="home__btn">
-                    <a href="" className="btn">
+                    <Link to="/00-started" className="btn">
                         Ingresar
-                    </a>
-                    <a href="" className="btn">
-                        Ir youtube
-                    </a>
+                    </Link>
+                    <Link className="btn">Ir youtube</Link>
                 </div>
             </div>
             <section className="home__list-items">

@@ -7,7 +7,7 @@ const CoffeMe = () => {
             className="coffe__me"
         >
             <img
-                src="/public/blue-button.png"
+                src="/blue-button.png"
                 alt="coffe-me"
                 className="coffe__logo-desktop"
             />

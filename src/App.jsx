@@ -4,6 +4,8 @@ import HeaderComponents from './components/headers/HeaderComponents';
 import Home from './components/home/Home';
 import CoffeMe from './components/CoffeMe';
 import Footer from './components/footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import StartedOO from './routes/StartedOO';
 
 function App() {
     const [menuBar, setMenuBar] = useState(false);
@@ -26,10 +28,21 @@ function App() {
                     setOpen={setOpen}
                 />
             </header>
-            <section className="home__container">
-                <Home />
-            </section>
-            <CoffeMe />
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <section className="home__container">
+                                <Home />
+                                <CoffeMe />
+                            </section>
+                        </>
+                    }
+                />
+                <Route path="/00-started" element={<StartedOO />} />
+            </Routes>
+
             <Footer />
         </div>
     );

@@ -1,0 +1,56 @@
+.started__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 56px;
+    left: 0;
+}
+
+.navBar__aside {
+    width: 100%;
+    position: sticky;
+    top: 56px;
+    border: 1px solid royalblue;
+}
+
+.navBar__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: var(--background-color);
+}
+
+.navBar__item {
+    color: var(--text-hover-generic);
+    cursor: pointer;
+}
+
+.navBar__item:hover {
+    color: var(--color-icon-menu);
+}
+
+.navBar__item .navBar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background: var(--background-color);
+    transition: color .3s ease;
+    color: inherit;
+}
+
+.navBar__btn .navBar__icon svg {
+    font-size: 1rem;
+}
+
+.navBar__btn .navBar__title {
+    font-size: .9rem;
+}
+
+.div {
+    padding: 10px;
+}

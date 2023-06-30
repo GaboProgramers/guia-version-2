@@ -73,7 +73,6 @@ button {
   border-radius: 50%;
   cursor: pointer;
   transition: transform .3s ease;
-  border: 1px solid royalblue;
 }
 
 .coffe__me:hover {
@@ -95,13 +94,16 @@ button {
   position: absolute;
   bottom: 55px;
   right: 55px;
-  padding: 10px;
+  padding: 5px;
   background: var(--focus-link);
   color: var(--background-color);
   border-radius: 20px 20px 0 20px;
   animation: 3s alternate modal;
   transition: display .3s ease-in-out;
   display: none;
+  font-size: .8rem;
+  color: var(--text-color-generic);
+  font-family: 'Nunito', sans-serif;
 }
 
 .coffe__me:hover .modal {
