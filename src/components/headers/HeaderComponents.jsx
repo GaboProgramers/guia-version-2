@@ -30,7 +30,7 @@ const HeaderComponents = ({ menuBar, setMenuBar, open, setOpen }) => {
     return (
         <nav className="navBar">
             <div className="container-logo">
-                <a href="https://google.com" className="img-logo">
+                <a href="/" className="img-logo">
                     <img
                         src="/17_logo_icon_white.svg"
                         alt="logo"
