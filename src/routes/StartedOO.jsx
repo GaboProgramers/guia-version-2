@@ -1,7 +1,15 @@
 import { BiCategory } from 'react-icons/bi';
 import './styles/started.css';
+import AsideNavBar from '../components/aside/AsideNavBar';
+import { useState } from 'react';
 
 const StartedOO = () => {
+    const [openAside, setOpenAside] = useState(false);
+
+    const handleOpenAside = () => {
+        setOpenAside(true);
+    };
+
     const scrollUp = () => {
         window.scrollTo({
             top: 0,
@@ -14,7 +22,10 @@ const StartedOO = () => {
             <nav className="navBar__aside">
                 <ul className="navBar__items">
                     <li className="navBar__item">
-                        <button className="navBar__btn">
+                        <button
+                            className="navBar__btn"
+                            onClick={handleOpenAside}
+                        >
                             <span className="navBar__icon">
                                 <BiCategory />
                             </span>
@@ -26,7 +37,9 @@ const StartedOO = () => {
                     </li>
                 </ul>
             </nav>
-            <div className="div">hola</div>
+            <div className={`navBar-aside ${openAside ? 'open' : ''}`}>
+                <AsideNavBar setOpenAside={setOpenAside} />
+            </div>
         </div>
     );
 };
