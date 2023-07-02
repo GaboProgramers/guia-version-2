@@ -5,7 +5,8 @@ import { AiOutlinePlusSquare, AiOutlineMinusSquare } from 'react-icons/ai';
 const ArticleDragable = () => {
     const [dragable, setDragable] = useState(true);
 
-    const handleDragable = () => {
+    const handleDragable = event => {
+        event.stopPropagation();
         setDragable(!dragable);
     };
 
@@ -29,7 +30,9 @@ const ArticleDragable = () => {
                     <ul className={`art__list ${dragable ? 'open' : ''}`}>
                         {item.items?.map(list => (
                             <li key={list.text} className="art__item">
-                                <a href={list.href}>{list.text}</a>
+                                <a href={`/#/00-started${list.href}/`}>
+                                    {list.text}
+                                </a>
                             </li>
                         ))}
                     </ul>
