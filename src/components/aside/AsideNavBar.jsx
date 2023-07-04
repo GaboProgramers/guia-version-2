@@ -9,7 +9,7 @@ const AsideNavBar = ({ setOpenAside }) => {
             <span className="close__icon" onClick={() => setOpenAside(false)}>
                 <SlClose />
             </span>
-            <ArticleDragable />
+            <ArticleDragable setOpenAside={setOpenAside} />
         </aside>
     );
 };

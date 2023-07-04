@@ -6,10 +6,12 @@ import CoffeMe from './components/CoffeMe';
 import Footer from './components/footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import StartedOO from './routes/StartedOO';
+import JavascriptReact from './routes/JavascriptReact';
 
 function App() {
     const [menuBar, setMenuBar] = useState(false);
     const [open, setOpen] = useState(false);
+    const [openAside, setOpenAside] = useState(false);
 
     return (
         <div className="App">
@@ -40,7 +42,19 @@ function App() {
                         </>
                     }
                 />
-                <Route path="/00-started" element={<StartedOO />} />
+                <Route
+                    path="/00-started"
+                    element={
+                        <StartedOO
+                            openAside={openAside}
+                            setOpenAside={setOpenAside}
+                        />
+                    }
+                />
+                <Route
+                    path="/00-started/Javascrip-react"
+                    element={<JavascriptReact />}
+                />
             </Routes>
 
             <Footer />
